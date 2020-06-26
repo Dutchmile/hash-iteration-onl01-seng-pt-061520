@@ -9,3 +9,9 @@ birthday_kids.each do |kid, age|
   puts "Happy Birthday #{kid}! You are now #{age} years old!"
 end
 end
+
+def age_appropriate_birthday(birthday_kids)
+  birthday_kids.each do |kid, age|
+    puts "Happy Birthday #{kid}! You are now #{age} years old!" if age < 12
+  end
+end
